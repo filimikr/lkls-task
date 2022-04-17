@@ -11,16 +11,15 @@ For security reasons, the API key is not in main.py. Before running the script, 
 
 **Please note: The free subscription plan has a limit of 250 requests/month.**
 
-## 2) Setup gspread, the python API used to export data to Google Sheets
-### Google Sheets API Authentication
+## 2) Setup authentication and authorization for Google Sheets API
 To access spreadsheets via Google Sheets API you need to authenticate and authorize the application. To do this, please follow the instructions [here](https://docs.gspread.org/en/latest/oauth2.html) from the beginning (Authentication), until step 6 (included), of the “_For Bots: Using Service Account_” section, which is sharing your spreadsheet with the _client_email_, that can be found in the downloaded json file.
 
-Once those steps are completed, please copy the content of your json file, and paste it into the gsheets.json file of the project. 
+Once those steps are completed, please copy the content of your downloaded  json file, and paste it into the gsheets.json file of the project. 
 
 ## 3) Installation
 The script was created using Python 3.9. 
 
-1. Create a [python virtual environment](https://docs.python.org/3.9/library/venv.html) and activate it (optional)
+1. (Optional) Create a [python virtual environment](https://docs.python.org/3.9/library/venv.html) and activate it
 
 - e.g. in Linux: 
 ```bash
